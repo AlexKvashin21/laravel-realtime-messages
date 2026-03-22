@@ -19,6 +19,17 @@ Frontend (Vue 3 + Tailwind + Axios)
 
 Скопировать .env.example в .env
 
+Создать ключ в [личном кабинете pusher.com](https://pusher.com/) 
+и заполнить поля в .env файле:
+
+PUSHER_APP_ID
+
+PUSHER_APP_KEY
+
+PUSHER_APP_SECRET
+
+PUSHER_APP_CLUSTER
+
 ```bash
 docker-compose up nginx -d
 ```
