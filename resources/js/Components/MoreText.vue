@@ -14,7 +14,7 @@ const isTruncate = ref(true);
 const containerRef = useTemplateRef(`container`)
 const textRef = useTemplateRef(`text`)
 
-const textClass = computed(() => (!showMore.value && isTruncate.value ? 'break-all line-clamp-3' : 'break-all'));
+const textClass = computed(() => (!showMore.value && isTruncate.value ? 'break-words line-clamp-3' : 'break-words'));
 
 const toggleText = () => {
     showMore.value = !showMore.value;
@@ -28,11 +28,16 @@ onMounted(() => {
 
 <template>
     <div ref="container" class="overflow-hidden">
-        <p ref="text" :class="textClass">
+        <p ref="text" :class="textClass" class="leading-relaxed">
             {{ text }}
         </p>
-        <button v-if="!showMore && isTruncate" @click="toggleText" class="text-blue-500">
-            читать далее...
+        <button
+            v-if="!showMore && isTruncate"
+            type="button"
+            @click="toggleText"
+            class="mt-1 text-sm font-medium text-brand-600 transition hover:text-brand-800 hover:underline focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-1 rounded"
+        >
+            Читать далее…
         </button>
     </div>
 </template>

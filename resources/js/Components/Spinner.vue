@@ -1,6 +1,6 @@
 <template>
     <div class="loading-indicator">
-        <svg class="spinner" viewBox="0 0 50 50">
+        <svg class="spinner" viewBox="0 0 50 50" aria-hidden="true">
             <circle class="path" cx="25" cy="25" r="20" fill="none" />
         </svg>
     </div>
@@ -19,7 +19,7 @@
 }
 
 .path {
-    stroke: #007bff;
+    stroke: #4a46e4;
     stroke-width: 4;
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite;
