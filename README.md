@@ -1,10 +1,21 @@
-## Документация
 
-### Backend (Laravel 11 + Mysql + Redis + Pusher Websockets)
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-### Frontend (Vue 3 + Tailwind + Axios)
+[//]: # (smaller size)
+<p align="center"><a href="https://vuejs.org" target="_blank"><img src="https://vuejs.org/images/logo.png"  width="120" height="120" alt="vue.js"></a></p>
 
-## Сборка
+![1.png](docs/1.png)
+
+## О проекте:
+Демонстрация сообщений в реальном времени на Laravel + Pusher Websockets
+
+## Стек:
+
+Backend (Laravel 11 + Mysql + Redis + Pusher Websockets)
+
+Frontend (Vue 3 + Tailwind + Axios)
+
+## Сборка:
 
 Скопировать .env.example в .env
 
@@ -27,17 +38,13 @@ docker-compose run --rm npm install
 ```bash
 docker-compose run --rm npm run build
 ```
---------------------------
 
-↓ ДЛЯ HOT RELOAD ↓
+Перейти по адресу http://localhost:8000
+
+----------------------
+
+↓ ДЛЯ РАБОТЫ HOT RELOAD ↓
 ```bash
 docker-compose up npm-dev -d
 ```
 ----------------------
-
-Перейти по адресу http://localhost:8000/
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-[//]: # (smaller size)
-<p align="center"><a href="https://vuejs.org" target="_blank"><img src="https://vuejs.org/images/logo.png"  width="120" height="120" alt="vue.js"></a></p>
